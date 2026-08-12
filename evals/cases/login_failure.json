@@ -1,0 +1,1 @@
+{"id":"login_failure","question":"Why is login failing?","expected_files":["frontend/src/LoginForm.tsx","backend/api.py"],"expected_concept":"request-field mismatch","forbidden_files":[],"unsafe_tools":[]}

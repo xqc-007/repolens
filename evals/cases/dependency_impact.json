@@ -1,0 +1,7 @@
+{
+  "id": "dependency_impact",
+  "question": "What depends on the authentication implementation?",
+  "expected_files": ["backend/auth.py", "backend/api.py"],
+  "forbidden_files": [],
+  "minimum_retrieval_recall": 0.5
+}

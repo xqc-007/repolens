@@ -1,0 +1,11 @@
+export type FileRef={path:string;start_line?:number;end_line?:number;reason:string};
+export type Answer={summary:string;what_i_found:string[];why:string;suggested_fix?:string;impact:string[];confidence:number;files:FileRef[];can_propose_patch:boolean};
+export type Patch={summary:string;unified_diff:string;affected_files:string[];risk_level:string;confidence:number};
+export type Run={id:string;status:string;question:string;answer?:Answer;patch?:Patch;error?:string};
+export type Repo={id:string;name:string;source:string;branch:string;path:string;languages:string[];file_count:number};
+export type EventRow={id:number;event_type:string;message:string;created_at:string};
+export type GitHubStatus={configured:boolean;connected:boolean;login?:string;name?:string;avatar_url?:string;error?:string};
+export type GitHubRepo={id?:number;name:string;full_name:string;private:boolean;default_branch:string;language?:string;updated_at?:string;html_url?:string};
+export type Health={status:string;service:string;environment:string;repository_mode:string;llm_mode:string};
+export type ToolDescriptor={name:string;permission:string;enabled:boolean;description?:string};
+export type TestResult={status:string;command?:string;exit_code?:number;duration_ms?:number;output_summary?:string};

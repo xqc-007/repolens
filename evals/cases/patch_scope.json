@@ -1,0 +1,6 @@
+{
+  "id": "patch_scope",
+  "question": "Fix the login bug without changing unrelated backend files.",
+  "allowed_patch_files": ["frontend/src/LoginForm.tsx"],
+  "forbidden_patch_files": ["backend/api.py", "backend/auth.py"]
+}
