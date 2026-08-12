@@ -6,6 +6,20 @@ RepoLens is a full-stack repository assistant that can inspect a GitHub project,
 
 The main design rule is simple: the model does not get unrestricted access to the repository. Application code decides what can be read, what can be proposed and what can be executed.
 
+## Product preview
+
+### Home
+![RepoLens home](docs/screenshots/home.png)
+
+### Repository connection
+![RepoLens repository view](docs/screenshots/repository.png)
+
+### AI investigation
+![RepoLens ask view](docs/screenshots/ask.png)
+
+### Proposed changes
+![RepoLens changes view](docs/screenshots/changes.png)
+
 ## Current status
 
 This is the portfolio V1. It supports the complete demo flow and real GitHub repositories, while deliberately stopping short of automatic commits or pushes.
